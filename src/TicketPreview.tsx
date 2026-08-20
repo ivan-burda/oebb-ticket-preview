@@ -9,7 +9,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 export const TicketPreview: FC = () => {
     return (
-        <div className="preview-container">
+        <div className="preview-container" data-testid="ticket-preview">
             <Document file={'./ticket.pdf'} >
                 <Page
                     key={1}

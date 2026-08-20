@@ -2,8 +2,9 @@ import { FC } from 'react';
 interface Props {
     onShowPreview: () => void;
 }
-export const PreviewAction: FC<Props> = ({onShowPreview}) => (
+export const PreviewAction: FC<Props> = ({ onShowPreview }) => (
     <button
+        data-testid="show-ticket-preview-action"
         onClick={onShowPreview}
         aria-label="Show preview"
         title="Show preview"
