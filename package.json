@@ -1,0 +1,48 @@
+{
+    "name": "oebb-ticket-preview",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "description": "A programming kata — implement PDF viewer",
+    "engines": {
+        "node": ">=22.18.0"
+    },
+    "scripts": {
+        "start": "vite",
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "lint": "eslint 'src/**/*.{ts,tsx}' --report-unused-disable-directives --fix",
+        "format": "prettier --write 'src/**/*.{ts,tsx,css,md}'",
+        "test:unit": "vitest run -c vitest.unit.config.ts",
+        "test:integration": "playwright test -c playwright-ct.config.ts --ui",
+        "test:integration:headless": "playwright test -c playwright-ct.config.ts"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "react": "^19.2.4",
+        "react-dom": "^19.2.4",
+        "react-pdf": "^10.4.1",
+        "react-router-dom": "^7.18.2",
+        "tailwindcss": "^4.2.2",
+        "typescript": "^6.0.3",
+        "vite": "^8.2.2"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@playwright/experimental-ct-react": "^1.59.1",
+        "@playwright/test": "^1.59.1",
+        "@tailwindcss/vite": "^4.2.2",
+        "@types/react": "^19.2.14",
+        "@types/react-dom": "^19.2.3",
+        "@vitejs/plugin-react": "^6.1.0",
+        "@vitest/coverage-v8": "^4.1.11",
+        "eslint": "^10.8.1",
+        "eslint-plugin-react-hooks": "^7.1.1",
+        "eslint-plugin-react-refresh": "^0.5.4",
+        "playwright": "^1.60.0",
+        "prettier": "^3.8.1",
+        "typescript-eslint": "^8.67.0",
+        "vitest": "^4.1.11"
+    }
+}
